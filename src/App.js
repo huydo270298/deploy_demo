@@ -1,9 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
+import classNames from 'classnames/bind';
+import styles from './App.module.scss';
+
+let cx = classNames.bind(styles)
+
 
 function App() {
   return (
-    <div className="App">
+    <div className={cx('App')}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
